@@ -3,6 +3,7 @@ package com.sliit.mtit.microservice.locationservice.dto;
 public class LocationResponse {
 
     private String locationId;
+    private String deliveryId;
     private String message;
 
     public String getLocationId() {
@@ -19,5 +20,13 @@ public class LocationResponse {
 
     public void setMessage(String message) {
         this.message = message;
+    }
+
+    public String getDeliveryId() {
+        return deliveryId;
+    }
+
+    public void setDeliveryId(String deliveryId) {
+        this.deliveryId = deliveryId;
     }
 }
