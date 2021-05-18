@@ -28,10 +28,10 @@ public class OrderServiceImpl {
 		makePaymentRequest.setAmount(orderRequest.getAmount());
 		makePaymentRequest.setQty(orderRequest.getQty());
 		
-		ResponseEntity<MakePaymentResponse> makePaymentResponse =  restTemplate.postForEntity("http://localhost:8080/payment", makePaymentRequest , MakePaymentResponse.class); 
+		ResponseEntity<MakePaymentResponse> makePaymentResponse =  restTemplate.postForEntity("http://localhost:8089/payment", makePaymentRequest , MakePaymentResponse.class); 
 		
 		OrderResponse orderResponse = new OrderResponse();
-		orderResponse.setCustomerId(UUID.randomUUID().toString());
+		orderResponse.setOrderId(UUID.randomUUID().toString());
 		orderResponse.setPaymentId(makePaymentResponse.getBody().getPaymentId());
 		orderResponse.setMessage("Create order successfully"); 
 		

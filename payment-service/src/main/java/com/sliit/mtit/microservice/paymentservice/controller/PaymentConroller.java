@@ -10,7 +10,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 
-
 import com.sliit.mtit.microservice.paymentservice.dto.PaymentRequest;
 import com.sliit.mtit.microservice.paymentservice.dto.PaymentResponse;
 
@@ -28,14 +27,12 @@ public class PaymentConroller {
 		BigDecimal totalAmount = (request.getAmount()).multiply(qty);
 		
 		PaymentResponse paymentResponse = new PaymentResponse();
-		//paymentResponse.setCustomerId(UUID.randomUUID().toString());
 		paymentResponse.setPaymentId(UUID.randomUUID().toString());
 		paymentResponse.setPaymentDate(new Date());
 		paymentResponse.setTotal(totalAmount);
 		paymentResponse.setStatus("Make payment successfully!!!!");
 		
-		return paymentResponse;  
-		
+		return paymentResponse;  		
 	}
 
 }

@@ -5,7 +5,7 @@ import lombok.Data;
 @Data
 public class OrderResponse {
 	
-	private String customerId;
+	private String orderId;
 	
 	private String paymentId;
 	

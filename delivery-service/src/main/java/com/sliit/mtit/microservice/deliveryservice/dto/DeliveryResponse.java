@@ -1,24 +1,11 @@
 package com.sliit.mtit.microservice.deliveryservice.dto;
 
+import lombok.Data;
+
+@Data
 public class DeliveryResponse {
 
     private String deliveryId;
     private String message;
-
-    public String getDeliveryId() {
-        return deliveryId;
-    }
-
-    public void setDeliveryId(String deliveryId) {
-        this.deliveryId = deliveryId;
-    }
-
-    public String getMessage() {
-        return message;
-    }
-
-    public void setMessage(String message) {
-        this.message = message;
-    }
 
 }
