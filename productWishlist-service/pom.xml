@@ -47,7 +47,11 @@
 			<artifactId>sqlite-jdbc</artifactId>
 			<version>3.25.2</version>
 		</dependency>
-	</dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-autoconfigure</artifactId>
+        </dependency>
+    </dependencies>
 
 	<build>
 		<plugins>

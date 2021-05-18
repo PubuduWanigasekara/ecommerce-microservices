@@ -19,7 +19,7 @@ public class CardServiceImpl {
     public ResponseEntity<ProductRequest> getProduct(Integer id){
         Map<String, Integer> params = new HashMap<>();
         params.put("id", id);
-        ResponseEntity<ProductRequest> productResponse = restTemplate.getForEntity("http://localhost:8081/api/products/getProduct/{id}",ProductRequest.class , params);
+        ResponseEntity<ProductRequest> productResponse = restTemplate.getForEntity("http://localhost:9092/api/products/getProduct/{id}",ProductRequest.class , params);
         return productResponse;
     }
 }
