@@ -26,7 +26,7 @@ public class LocationServiceImpl {
         locationCreationRequest.setLocation(locationRequest.getLocation());
         locationCreationRequest.setDeliveryCharges(locationRequest.getDeliveryCharges());
         locationCreationRequest.setMobileNumber(locationRequest.getMobileNumber());
-        ResponseEntity<LocationCreationResponse> locationCreationResponse =  restTemplate.postForEntity("http://localhost:8080/delivery",locationCreationRequest, LocationCreationResponse.class);
+        ResponseEntity<LocationCreationResponse> locationCreationResponse =  restTemplate.postForEntity("http://localhost:9071/delivery",locationCreationRequest, LocationCreationResponse.class);
 
         var locationResponse = new LocationResponse();
         locationResponse.setLocationId(UUID.randomUUID().toString());

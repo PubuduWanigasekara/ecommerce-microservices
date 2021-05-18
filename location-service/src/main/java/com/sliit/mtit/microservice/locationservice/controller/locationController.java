@@ -19,6 +19,12 @@ public class locationController {
 
         System.out.println("Location Details : " + request);
 
+//        var locationResponse = new LocationResponse();
+//        locationResponse.setLocationId(UUID.randomUUID().toString());
+//        locationResponse.setMessage("Successfully created the order");
+
+//        return locationResponse;
+
         return locationService.createLocation(request);
     }
 }
