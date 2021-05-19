@@ -28,7 +28,7 @@ public class UserService {
         User user = userRepository.findByUserId(userId);
 
         Product product =
-                restTemplate.getForObject("http://PRODUCT-SERVICE/products/" + user.getProductId() ,Product.class);
+                restTemplate.getForObject("http://localhost:9001/products/" + user.getProductId() ,Product.class);
         vo.setUser(user);
         vo.setProduct(product);
 
