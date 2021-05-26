@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sliit.mtit.microservice</groupId>
-	<artifactId>customer-service</artifactId>
+	<artifactId>order-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>customer-service</name>
-	<description>Customer service project for Spring Boot</description>
+	<name>order-service</name>
+	<description>Order service project for Spring Boot</description>
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>

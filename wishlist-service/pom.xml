@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.sliit.mtit.microservice</groupId>
-	<artifactId>delivery-service</artifactId>
+	<artifactId>wishlist-service</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>delivery-service</name>
-	<description>Delivery Service project for Spring Boot</description>
+	<name>wishlist-service</name>
+	<description>Wishlist Service project for Spring Boot</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
